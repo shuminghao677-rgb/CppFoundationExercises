@@ -29,17 +29,17 @@ int main(){
     return 0;
 }
 //方法2:分别声明和赋值对象
-// int main(){
-//     class Student stu2;
-//     stu2.id=2;
-//     stu2.name="Marry";
-//     stu2.age=14;
-//     stu2.addr="Beijing";
-//     cout<<stu2.id<<endl;
-//     cout<<stu2.name<<endl;
-//     cout<<stu2.age<<endl;
-//     cout<<stu2.addr<<endl;
-//     stu2.say_hi();
-//     return 0;
-// }
+int main(){
+    class Student stu2;
+    stu2.id=2;
+    stu2.name="Marry";
+    stu2.age=14;
+    stu2.addr="Beijing";
+    cout<<stu2.id<<endl;
+    cout<<stu2.name<<endl;
+    cout<<stu2.age<<endl;
+    cout<<stu2.addr<<endl;
+    stu2.say_hi();
+    return 0;
+}
 
