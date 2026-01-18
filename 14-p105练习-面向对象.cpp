@@ -25,7 +25,7 @@ using namespace std;
 // }
 
 
-//然后写一个用class将object的attribute和function结合在一起的叫做class
+//然后写一个用class将object的attribute和method结合在一起的叫做class
 class AlarmClock
 {
 public:
@@ -40,13 +40,19 @@ public:
     }
 };
 int main(){
-    AlarmClock ac1={1.11,2.12,3.13};
+    class AlarmClock ac1={1.11,2.12,3.13};
+    //两种方法等效
+    // class AlarmClock ac1;
+    // ac1.length=1.11;
+    // ac1.width=2.12;
+    // ac1.height=3.13;
+
     cout<<endl<<"长度:    "<<ac1.length<<endl;
     cout<<endl<<"宽度:    "<<ac1.width<<endl;
     cout<<endl<<"高度:    "<<ac1.height<<endl;
     ac1.clock_ring(300,10);
     ac1.say_hi();
-    AlarmClock ac2={1.21,2.22,3.23};
+    class AlarmClock ac2={1.21,2.22,3.23};
     cout<<endl<<"长度:    "<<ac2.length<<endl;
     cout<<endl<<"宽度:    "<<ac2.width<<endl;
     cout<<endl<<"高度:    "<<ac2.height<<endl;
